@@ -1,0 +1,54 @@
+SQL queries for tables;
+
+1- HOD Table
+
+create table Hod(
+empUserName varchar(30) unique,
+empPassword varchar(20)
+);
+
+2- Employee Table
+
+create table employee(
+empID int primary key auto_increment,
+empName varchar(20),
+empUserName varchar(30) unique,
+empPassword varchar(20)
+);
+
+3- Engineer Table
+
+create table engineer(
+engId int auto_increment,
+engName varchar(20),
+engUsername varchar(30) not null unique,
+engPassword varchar(20) not null,
+engCategory varchar(20),
+PRIMARY KEY (engId)
+);
+
+4- Complain Book Table
+
+create table complainBook(
+Sno int(6) primary key auto_increment,
+TicketNumber int(10) unique,
+Type varchar(20) not null,
+Description varchar(50),
+StatusOfComplain varchar(15) default 'New',
+AssignEngineer varchar(30),
+ComplainByEmployee varchar(20),
+FOREIGN KEY (AssignEngineer) REFERENCES engineer(engUsername)
+ON DELETE SET NULL
+);
+
+5- Complain History table
+
+create table complainHistory(
+Sno int(6) primary key auto_increment,
+TicketNumber int(10) not null unique,
+Type varchar(20) not null,
+Description varchar(50) not null,
+StatusOfComplain varchar(15) default 'Completed',
+AssignEngineer varchar(30),
+ComplainByEmployee varchar(20) not null
+);
