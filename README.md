@@ -4,11 +4,11 @@ This is a console-based project that can be used by an organisation internally t
 
 <h3>Functionalities:- </h3>
 
-Employees:- Can login or register to the system. || Can raise a ticket if facing any software or hardware issues with his system. || Can check the status of a raised complaint. || Can check history of all the complaints raised by him/her. || Can change his password for log in.
+<h5>Employees:-</h5> Can login or register to the system. || Can raise a ticket if facing any software or hardware issues with his system. || Can check the status of a raised complaint. || Can check history of all the complaints raised by him/her. || Can change his password for log in.
 
-HOD:- Can login to the system. || Can register a new System Engineer(Software/Hardware). || Can check all the newly raised complaints. || Can assign complaints to an Engineer || Can check the complete complaint history. || Remove an Engineer.
+<h5>HOD:-</h5>Can login to the system. || Can register a new System Engineer(Software/Hardware). || Can check all the newly raised complaints. || Can assign complaints to an Engineer || Can check the complete complaint history. || Remove an Engineer.
 
-Engineer:- Can login to the system. || Can check complaints assigned to him/her. || Can update the status of the complaints he/she is assigned. || Can check all the complaints attended by him or her. || Can change his/her password.
+<h5>Engineer:-</h5> Can login to the system. || Can check complaints assigned to him/her. || Can update the status of the complaints he/she is assigned. || Can check all the complaints attended by him or her. || Can change his/her password.
 
 <h3>ER Diagram:-</h3>
 
